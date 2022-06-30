@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Web Fundamentals Workshop</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+		<link rel="stylesheet" href="20220623-Lab6_Interactive Scatter plot/style.css" />
+		<link rel="stylesheet" href="20220623-Lab5_Show Detail BarChart/style.css" />
+		<link rel="stylesheet" href="20220623-Lab4_fruitlist/style.css" />
+		<link rel="stylesheet" href="20220618-Lab3_line chart/style.css" />
+		<link rel="stylesheet" href="20220618-Lab2_Scatter plot/style.css" />
+		<link rel="stylesheet" href="20220614-Lab1_bar chart/style.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper-->
+	<div id="wrapper">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="#" class="icon solid fa-home"><span>Home</span></a>
+			<a href="#bar_chart" class="icon solid fa-folder"><span>bar_chart</span></a>
+			<a href="#scatter_chart" class="icon solid fa-folder"><span>scatter_chart</span></a>
+			<a href="#line_chart" class="icon solid fa-folder"><span>line_chart</span></a>
+			<a href="#fruitlist" class="icon solid fa-folder"><span>fruitlist</span></a>
+			<a href="#show_detail" class="icon solid fa-folder"><span>show_detail</span></a>
+			<a href="#interactive_chart" class="icon solid fa-folder"><span>interactive_chart</span></a>
+			<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+			<!-- <a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a> -->
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Me -->
+			<article id="home" class="panel intro">
+				<header>
+					<h1>YiYen Hsi</h1>
+					<p>D3 Merge Web</p>
+				</header>
+				<a href="#work" class="jumplink pic">
+					<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+					<img src="images/me.jpg" alt="" />
+				</a>
+			</article>
+
+			<!-- bar_chart -->
+			<article id="bar_chart" class="panel">
+				<header>
+					<h2>bar_chart</h2>
+				</header>
+
+				<section>
+					<div class="bar-chart-container"></div>
+				</section>
+			</article>
+
+			<!-- scatter_chart -->
+			<article id="scatter_chart" class="panel">
+				<header>
+					<h2>bar_chart</h2>
+				</header>
+
+				<section>
+					<div class="scatter-plot-container"></div>
+				</section>
+			</article>
+
+			<!-- line_chart -->
+			<article id="line_chart" class="panel">
+				<header>
+					<h2>line_chart</h2>
+				</header>
+
+				<section>
+					<div class="line-chart-container"></div>
+				</section>
+			</article>
+
+			<!-- fruitlist -->
+			<article id="fruitlist" class="panel">
+				<header>
+					<h2>fruitlist</h2>
+				</header>
+
+				<section>
+					<h3 class="Header">喜歡的水果清單</h3>
+					<div class="general-update-container">
+						<svg width="150" height="200"></svg>
+					</div>
+					<div class="controls">
+						<button class="john" data-name="john">John</button>
+						<button class="marry" data-name="marry">Marry</button>
+						<button class="ryan" data-name="ryan">Ryan</button>
+					</div>
+					<div class="tooltip"></div>
+				</section>
+			</article>
+
+			<!-- show_detail -->
+			<article id="show_detail" class="panel">
+				<header>
+					<h2>show_detail</h2>
+				</header>
+
+				<section>
+					<div class="bar-chart-container"></div>
+					<div class="controls">
+						<button data-name="revenue">Revenue</button>
+						<button data-name="budget">Budget</button>
+						<button data-name="popularity">Popularity</button>
+					</div>
+
+					<div class="tooltip">
+						<div class="tip-header">
+							<h3></h3>
+							<h4></h4>
+						</div>
+						<div class="tip-body"></div>
+					</div>
+				</section>
+			</article>
+
+			<!-- interactive_chart -->
+			<article id="interactive_chart" class="panel">
+				<header>
+					<h2>interactive_chart</h2>
+				</header>
+
+				<section>
+
+					<div class="scatter-plot-container"></div>
+					<div class="selected-container">
+						<div class="selected-header">Selected Element</div>
+						<div class="selected-body"></div>
+					</div>
+
+				</section>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact" class="panel">
+				<header>
+					<h2>Contact Me</h2>
+				</header>
+				<form action="#" method="post">
+					<div>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-medium">
+								<input type="text" name="email" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<input type="text" name="subject" placeholder="Subject" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" placeholder="Message" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<input type="submit" value="Send Message" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</article>
+
+		</div>
+
+
+
+		<!-- Footer -->
+		<div id="footer">
+			<ul class="copyright">
+				<li>&copy; Untitled.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="//unpkg.com/d3"></script>
+	<script src="20220623-Lab6_Interactive Scatter plot/main.js" async defer></script>
+	<script src="20220623-Lab5_Show Detail BarChart/main.js" async defer></script>
+	<script src="20220623-Lab4_fruitlist/main.js" async defer></script>
+	<script src="20220618-Lab3_line chart/main.js" async defer></script>
+	<script src="20220618-Lab2_Scatter plot/main.js" async defer></script>
+	<script src="20220614-Lab1_bar chart/main.js" async defer></script>
+
+</body>
+
+</html>
